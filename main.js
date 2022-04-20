@@ -14,7 +14,8 @@ document.getElementById("add").addEventListener("click", function () {
   var value = document.getElementById("item").value;
   if (value) {
     // Adding the data
-    const addtodo = "http://localhost:6008/api/ToDo/add";
+    const addtodo =
+      "http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/add";
     console.log("Clicked add");
     console.log(document.getElementById("item").value);
     var data = {
@@ -52,7 +53,7 @@ function clearListItems() {
 }
 
 function removeItem(result) {
-  var deletetodourl = `http://localhost:6008/api/ToDo/delete?id=${result["id"]}`;
+  var deletetodourl = `http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
   $.ajax({
     url: deletetodourl,
     type: "DELETE",
@@ -73,7 +74,7 @@ function removeItem(result) {
 }
 
 function editItem(result) {
-  var edittodourl = `http://localhost:6008/api/ToDo/delete?id=${result["id"]}`;
+  var edittodourl = `http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
 
   $.ajax({
     url: deletetodourl,
@@ -96,7 +97,8 @@ function editItem(result) {
 function populateList() {
   clearListItems();
   // Fetch the data
-  const getalltotodurl = "http://localhost:6008/api/ToDo/getall";
+  const getalltotodurl =
+    "http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/getall";
   $.ajax({
     url: getalltotodurl,
     type: "GET",

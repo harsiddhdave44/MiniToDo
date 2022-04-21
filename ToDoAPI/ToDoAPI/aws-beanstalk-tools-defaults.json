@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-west-2",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "ToDoAPI",
+    "environment"    : "ToDoAPI-prod",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-09fac33daa1c71f7d\";\"aws:ec2:vpc,Subnets\"=\"subnet-077f2ec07efc3c6a0\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.0 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "todoapp-codemancers",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "UbuntuKeyPair",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}

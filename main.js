@@ -152,9 +152,9 @@ function addItemToDOM(result) {
   remove.classList.add("remove");
   remove.innerHTML = removeSVG;
 
-  var edit = document.createElement("button");
-  edit.classList.add("edit");
-  edit.innerHTML = editSVG;
+  // var edit = document.createElement("button");
+  // edit.classList.add("edit");
+  // edit.innerHTML = editSVG;
 
   // Add click event for removing the item
   remove.addEventListener("click", function () {

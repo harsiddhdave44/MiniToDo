@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Codemancers Internship Task\\code\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
+    "F:\\Codemancers Internship Task\\code\\todo\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
   },
   "projects": {
-    "F:\\Codemancers Internship Task\\code\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
+    "F:\\Codemancers Internship Task\\code\\todo\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Codemancers Internship Task\\code\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "F:\\Codemancers Internship Task\\code\\todo\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "F:\\Codemancers Internship Task\\code\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "projectPath": "F:\\Codemancers Internship Task\\code\\todo\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
         "packagesPath": "C:\\Users\\harsi\\.nuget\\packages\\",
-        "outputPath": "F:\\Codemancers Internship Task\\code\\ToDoAPI\\ToDoAPI\\obj\\",
+        "outputPath": "F:\\Codemancers Internship Task\\code\\todo\\ToDoAPI\\ToDoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\harsi\\AppData\\Roaming\\NuGet\\NuGet.Config",

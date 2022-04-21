@@ -15,7 +15,7 @@ document.getElementById("add").addEventListener("click", function () {
   if (value) {
     // Adding the data
     const addtodo =
-      "http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/add";
+      "http://todoapi-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/add";
     console.log("Clicked add");
     console.log(document.getElementById("item").value);
     var data = {
@@ -53,7 +53,7 @@ function clearListItems() {
 }
 
 function removeItem(result) {
-  var deletetodourl = `http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
+  var deletetodourl = `http://todoapi-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
   $.ajax({
     url: deletetodourl,
     type: "DELETE",
@@ -74,7 +74,7 @@ function removeItem(result) {
 }
 
 function editItem(result) {
-  var edittodourl = `http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
+  var edittodourl = `http://todoapi-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/delete?id=${result["id"]}`;
 
   $.ajax({
     url: deletetodourl,
@@ -98,7 +98,7 @@ function populateList() {
   clearListItems();
   // Fetch the data
   const getalltotodurl =
-    "http://todoapp-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/getall";
+    "http://todoapi-codemancers.us-west-2.elasticbeanstalk.com/api/ToDo/getall";
   $.ajax({
     url: getalltotodurl,
     type: "GET",
@@ -160,11 +160,11 @@ function addItemToDOM(result) {
   remove.addEventListener("click", function () {
     removeItem(result);
   });
-  edit.addEventListener("click", function () {
-    editItem(result);
-  });
+  // edit.addEventListener("click", function () {
+  //   editItem(result);
+  // });
 
-  buttons.appendChild(edit);
+  // buttons.appendChild(edit);
   buttons.appendChild(remove);
 
   item.appendChild(buttons);
